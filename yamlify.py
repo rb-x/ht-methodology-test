@@ -35,4 +35,3 @@ def json_to_yaml(json_filename, yaml_filename):
 
 json_to_yaml('WSTG.json', 'owstg.yaml')
 
-
