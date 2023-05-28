@@ -16,10 +16,9 @@ def transform(json_data):
                 'observations': 'Your observation',
                 'reference': test['reference'],
                 'objectives': test['objectives'],
-                'substeps': {
-                    'info001': {'description': 'TODO...'},
-                    'info002': {'description': 'TODO...'},
-                },
+                'substeps': [
+                    "Your note 1",
+                ],
                 'wasTested': False,
                 'wasVulnerable': False
             }
