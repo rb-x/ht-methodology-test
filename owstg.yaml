@@ -767,7 +767,7 @@
       wasTested: false
       wasVulnerable: false
     - description: Testing for Format String Injection
-      id: WSTG-INPV-13
+      id: WSTG-INPV-13-bis
       objectives:
       - Assess whether injecting format string conversion specifiers into user-controlled
         fields causes undesired behavior from the application.
