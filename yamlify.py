@@ -1,46 +1,39 @@
 import json
 import yaml
 
-def convert_to_yaml(owtsg_json):
-    yaml_structure = []
-
-    for category_name, category_data in owtsg_json['categories'].items():
-        category_id = category_data['id']
-        category_tests = category_data['tests']
-
-        category_entry = {
-            'id': category_id,
-            'title': category_name,
-            'children': []
+def transform(json_data):
+    yaml_data = []
+    for category, details in json_data['categories'].items():
+        new_category = {
+            'id': details['id'],
+            'title': category,
+            'atomic_tests': []
         }
-
-        for test in category_tests:
-            test_entry = {
+        for test in details['tests']:
+            new_test = {
                 'id': test['id'],
-                'title': test['name'],
-                'description': test['objectives'][0],
+                'description': test['name'],
+                'observations': 'Your observation',
                 'reference': test['reference'],
-                'tested': False,
-                'isvulnerable': False,
-                'observations': '',
-                'steps': []
+                'objectives': test['objectives'],
+                'substeps': {
+                    'info001': {'description': 'TODO...'},
+                    'info002': {'description': 'TODO...'},
+                },
+                'wasTested': False,
+                'wasVulnerable': False
             }
+            new_category['atomic_tests'].append(new_test)
+        yaml_data.append({'category': new_category})
+    return yaml_data
 
-            category_entry['children'].append(test_entry)
+def json_to_yaml(json_filename, yaml_filename):
+    with open(json_filename, 'r') as f:
+        json_data = json.load(f)
+    yaml_data = transform(json_data)
+    with open(yaml_filename, 'w') as f:
+        yaml.dump(yaml_data, f, default_flow_style=False, allow_unicode=True)
 
-        yaml_structure.append(category_entry)
+json_to_yaml('WSTG.json', 'owstg.yaml')
 
-    return yaml_structure
 
-# Read OWTSG.json
-with open('WSTG.json') as json_file:
-    owtsg_json = json.load(json_file)
-
-# Convert to YAML
-yaml_structure = convert_to_yaml(owtsg_json)
-
-# Convert YAML to string
-yaml_string = yaml.dump(yaml_structure)
-
-# Print the resulting YAML string
-print(yaml_string)
