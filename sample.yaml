@@ -1,0 +1,927 @@
+---
+
+- children:
+  - description: Identify what sensitive design and configuration information of the
+      application, system, or organization is exposed directly (on the organization's
+      site) or indirectly (via third-party services).
+    id: WSTG-INFO-01
+    isvulnerable: false
+    observations: ''
+    reference: https://owasp.org/www-project-web-security-testing-guide/latest/4-Web_Application_Security_Testing/01-Information_Gathering/01-Conduct_Search_Engine_Discovery_Reconnaissance_for_Information_Leakage
+    steps: []
+    tested: false
+    title: Conduct Search Engine Discovery Reconnaissance for Information Leakage
+  - description: Determine the version and type of a running web server to enable
+      further discovery of any known vulnerabilities.
+    id: WSTG-INFO-02
+    isvulnerable: false
+    observations: ''
+    reference: https://owasp.org/www-project-web-security-testing-guide/latest/4-Web_Application_Security_Testing/01-Information_Gathering/02-Fingerprint_Web_Server
+    steps: []
+    tested: false
+    title: Fingerprint Web Server
+  - description: Identify hidden or obfuscated paths and functionality through the
+      analysis of metadata files.
+    id: WSTG-INFO-03
+    isvulnerable: false
+    observations: ''
+    reference: https://owasp.org/www-project-web-security-testing-guide/latest/4-Web_Application_Security_Testing/01-Information_Gathering/03-Review_Webserver_Metafiles_for_Information_Leakage
+    steps: []
+    tested: false
+    title: Review Webserver Metafiles for Information Leakage
+  - description: Enumerate the applications within the scope that exist on a web server.
+    id: WSTG-INFO-04
+    isvulnerable: false
+    observations: ''
+    reference: https://owasp.org/www-project-web-security-testing-guide/latest/4-Web_Application_Security_Testing/01-Information_Gathering/04-Enumerate_Applications_on_Webserver
+    steps: []
+    tested: false
+    title: Enumerate Applications on Webserver
+  - description: Review webpage comments, metadata, and redirect bodies to find any
+      information leakage.
+    id: WSTG-INFO-05
+    isvulnerable: false
+    observations: ''
+    reference: https://owasp.org/www-project-web-security-testing-guide/latest/4-Web_Application_Security_Testing/01-Information_Gathering/05-Review_Webpage_Content_for_Information_Leakage
+    steps: []
+    tested: false
+    title: Review Webpage Content for Information Leakage
+  - description: Identify possible entry and injection points through request and
+      response analysis.
+    id: WSTG-INFO-06
+    isvulnerable: false
+    observations: ''
+    reference: https://owasp.org/www-project-web-security-testing-guide/latest/4-Web_Application_Security_Testing/01-Information_Gathering/06-Identify_Application_Entry_Points
+    steps: []
+    tested: false
+    title: Identify Application Entry Points
+  - description: Map the target application and understand the principal workflows.
+    id: WSTG-INFO-07
+    isvulnerable: false
+    observations: ''
+    reference: https://owasp.org/www-project-web-security-testing-guide/latest/4-Web_Application_Security_Testing/01-Information_Gathering/07-Map_Execution_Paths_Through_Application
+    steps: []
+    tested: false
+    title: Map Execution Paths Through Application
+  - description: Fingerprint the components being used by the web applications.
+    id: WSTG-INFO-08
+    isvulnerable: false
+    observations: ''
+    reference: https://owasp.org/www-project-web-security-testing-guide/latest/4-Web_Application_Security_Testing/01-Information_Gathering/08-Fingerprint_Web_Application_Framework
+    steps: []
+    tested: false
+    title: Fingerprint Web Application Framework
+  - description: ''
+    id: WSTG-INFO-09
+    isvulnerable: false
+    observations: ''
+    reference: https://owasp.org/www-project-web-security-testing-guide/latest/4-Web_Application_Security_Testing/01-Information_Gathering/09-Fingerprint_Web_Application
+    steps: []
+    tested: false
+    title: Fingerprint Web Application
+  - description: Understand the architecture of the application and the technologies
+      in use.
+    id: WSTG-INFO-10
+    isvulnerable: false
+    observations: ''
+    reference: https://owasp.org/www-project-web-security-testing-guide/latest/4-Web_Application_Security_Testing/01-Information_Gathering/10-Map_Application_Architecture
+    steps: []
+    tested: false
+    title: Map Application Architecture
+  id: WSTG-INFO
+  title: Information Gathering
+- children:
+  - description: Review the applications' configurations set across the network and
+      validate that they are not vulnerable.
+    id: WSTG-CONF-01
+    isvulnerable: false
+    observations: ''
+    reference: https://owasp.org/www-project-web-security-testing-guide/latest/4-Web_Application_Security_Testing/02-Configuration_and_Deployment_Management_Testing/01-Test_Network_Infrastructure_Configuration
+    steps: []
+    tested: false
+    title: Test Network Infrastructure Configuration
+  - description: Ensure that defaults and known files have been removed.
+    id: WSTG-CONF-02
+    isvulnerable: false
+    observations: ''
+    reference: https://owasp.org/www-project-web-security-testing-guide/latest/4-Web_Application_Security_Testing/02-Configuration_and_Deployment_Management_Testing/02-Test_Application_Platform_Configuration
+    steps: []
+    tested: false
+    title: Test Application Platform Configuration
+  - description: Dirbust sensitive file extensions, or extensions that might contain
+      raw data (*e.g.* scripts, raw data, credentials, etc.).
+    id: WSTG-CONF-03
+    isvulnerable: false
+    observations: ''
+    reference: https://owasp.org/www-project-web-security-testing-guide/latest/4-Web_Application_Security_Testing/02-Configuration_and_Deployment_Management_Testing/03-Test_File_Extensions_Handling_for_Sensitive_Information
+    steps: []
+    tested: false
+    title: Test File Extensions Handling for Sensitive Information
+  - description: Find and analyse unreferenced files that might contain sensitive
+      information.
+    id: WSTG-CONF-04
+    isvulnerable: false
+    observations: ''
+    reference: https://owasp.org/www-project-web-security-testing-guide/latest/4-Web_Application_Security_Testing/02-Configuration_and_Deployment_Management_Testing/04-Review_Old_Backup_and_Unreferenced_Files_for_Sensitive_Information
+    steps: []
+    tested: false
+    title: Review Old Backup and Unreferenced Files for Sensitive Information
+  - description: Identify hidden administrator interfaces and functionality.
+    id: WSTG-CONF-05
+    isvulnerable: false
+    observations: ''
+    reference: https://owasp.org/www-project-web-security-testing-guide/latest/4-Web_Application_Security_Testing/02-Configuration_and_Deployment_Management_Testing/05-Enumerate_Infrastructure_and_Application_Admin_Interfaces
+    steps: []
+    tested: false
+    title: Enumerate Infrastructure and Application Admin Interfaces
+  - description: Enumerate supported HTTP methods.
+    id: WSTG-CONF-06
+    isvulnerable: false
+    observations: ''
+    reference: https://owasp.org/www-project-web-security-testing-guide/latest/4-Web_Application_Security_Testing/02-Configuration_and_Deployment_Management_Testing/06-Test_HTTP_Methods
+    steps: []
+    tested: false
+    title: Test HTTP Methods
+  - description: Review the HSTS header and its validity.
+    id: WSTG-CONF-07
+    isvulnerable: false
+    observations: ''
+    reference: https://owasp.org/www-project-web-security-testing-guide/latest/4-Web_Application_Security_Testing/02-Configuration_and_Deployment_Management_Testing/07-Test_HTTP_Strict_Transport_Security
+    steps: []
+    tested: false
+    title: Test HTTP Strict Transport Security
+  - description: ''
+    id: WSTG-CONF-08
+    isvulnerable: false
+    observations: ''
+    reference: https://owasp.org/www-project-web-security-testing-guide/latest/4-Web_Application_Security_Testing/02-Configuration_and_Deployment_Management_Testing/08-Test_RIA_Cross_Domain_Policy
+    steps: []
+    tested: false
+    title: Test RIA Cross Domain Policy
+  - description: Review and identify any rogue file permissions.
+    id: WSTG-CONF-09
+    isvulnerable: false
+    observations: ''
+    reference: https://owasp.org/www-project-web-security-testing-guide/latest/4-Web_Application_Security_Testing/02-Configuration_and_Deployment_Management_Testing/09-Test_File_Permission
+    steps: []
+    tested: false
+    title: Test File Permission
+  - description: Enumerate all possible domains (previous and current).
+    id: WSTG-CONF-10
+    isvulnerable: false
+    observations: ''
+    reference: https://owasp.org/www-project-web-security-testing-guide/latest/4-Web_Application_Security_Testing/02-Configuration_and_Deployment_Management_Testing/10-Test_for_Subdomain_Takeover
+    steps: []
+    tested: false
+    title: Test for Subdomain Takeover
+  - description: Assess that the access control configuration for the storage services
+      is properly in place.
+    id: WSTG-CONF-11
+    isvulnerable: false
+    observations: ''
+    reference: https://owasp.org/www-project-web-security-testing-guide/latest/4-Web_Application_Security_Testing/02-Configuration_and_Deployment_Management_Testing/11-Test_Cloud_Storage
+    steps: []
+    tested: false
+    title: Test Cloud Storage
+  - description: Review the Content-Security-Policy header or meta element to identify
+      misconfigurations.
+    id: WSTG-CONF-12
+    isvulnerable: false
+    observations: ''
+    reference: https://owasp.org/www-project-web-security-testing-guide/latest/4-Web_Application_Security_Testing/02-Configuration_and_Deployment_Management_Testing/12-Test_for_Content_Security_Policy
+    steps: []
+    tested: false
+    title: Testing for Content Security Policy
+  - description: Make sure application paths are configured correctly.
+    id: WSTG-CONF-13
+    isvulnerable: false
+    observations: ''
+    reference: https://owasp.org/www-project-web-security-testing-guide/latest/4-Web_Application_Security_Testing/02-Configuration_and_Deployment_Management_Testing/13-Test_for_Path_Confusion
+    steps: []
+    tested: false
+    title: Test Path Confusion
+  id: WSTG-CONF
+  title: Configuration and Deployment Management Testing
+- children:
+  - description: Identify and document roles used by the application.
+    id: WSTG-IDNT-01
+    isvulnerable: false
+    observations: ''
+    reference: https://owasp.org/www-project-web-security-testing-guide/latest/4-Web_Application_Security_Testing/03-Identity_Management_Testing/01-Test_Role_Definitions
+    steps: []
+    tested: false
+    title: Test Role Definitions
+  - description: Verify that the identity requirements for user registration are aligned
+      with business and security requirements.
+    id: WSTG-IDNT-02
+    isvulnerable: false
+    observations: ''
+    reference: https://owasp.org/www-project-web-security-testing-guide/latest/4-Web_Application_Security_Testing/03-Identity_Management_Testing/02-Test_User_Registration_Process
+    steps: []
+    tested: false
+    title: Test User Registration Process
+  - description: Verify which accounts may provision other accounts and of what type.
+    id: WSTG-IDNT-03
+    isvulnerable: false
+    observations: ''
+    reference: https://owasp.org/www-project-web-security-testing-guide/latest/4-Web_Application_Security_Testing/03-Identity_Management_Testing/03-Test_Account_Provisioning_Process
+    steps: []
+    tested: false
+    title: Test Account Provisioning Process
+  - description: Review processes that pertain to user identification (*e.g.* registration,
+      login, etc.).
+    id: WSTG-IDNT-04
+    isvulnerable: false
+    observations: ''
+    reference: https://owasp.org/www-project-web-security-testing-guide/latest/4-Web_Application_Security_Testing/03-Identity_Management_Testing/04-Testing_for_Account_Enumeration_and_Guessable_User_Account
+    steps: []
+    tested: false
+    title: Testing for Account Enumeration and Guessable User Account
+  - description: Determine whether a consistent account name structure renders the
+      application vulnerable to account enumeration.
+    id: WSTG-IDNT-05
+    isvulnerable: false
+    observations: ''
+    reference: https://owasp.org/www-project-web-security-testing-guide/latest/4-Web_Application_Security_Testing/03-Identity_Management_Testing/05-Testing_for_Weak_or_Unenforced_Username_Policy
+    steps: []
+    tested: false
+    title: Testing for Weak or Unenforced Username Policy
+  id: WSTG-IDNT
+  title: Identity Management Testing
+- children:
+  - description: ''
+    id: WSTG-ATHN-01
+    isvulnerable: false
+    observations: ''
+    reference: https://owasp.org/www-project-web-security-testing-guide/latest/4-Web_Application_Security_Testing/04-Authentication_Testing/01-Testing_for_Credentials_Transported_over_an_Encrypted_Channel
+    steps: []
+    tested: false
+    title: Testing for Credentials Transported over an Encrypted Channel
+  - description: Determine whether the application has any user accounts with default
+      passwords.
+    id: WSTG-ATHN-02
+    isvulnerable: false
+    observations: ''
+    reference: https://owasp.org/www-project-web-security-testing-guide/latest/4-Web_Application_Security_Testing/04-Authentication_Testing/02-Testing_for_Default_Credentials
+    steps: []
+    tested: false
+    title: Testing for Default Credentials
+  - description: Evaluate the account lockout mechanism's ability to mitigate brute
+      force password guessing.
+    id: WSTG-ATHN-03
+    isvulnerable: false
+    observations: ''
+    reference: https://owasp.org/www-project-web-security-testing-guide/latest/4-Web_Application_Security_Testing/04-Authentication_Testing/03-Testing_for_Weak_Lock_Out_Mechanism
+    steps: []
+    tested: false
+    title: Testing for Weak Lock Out Mechanism
+  - description: Ensure that authentication is applied across all services that require
+      it.
+    id: WSTG-ATHN-04
+    isvulnerable: false
+    observations: ''
+    reference: https://owasp.org/www-project-web-security-testing-guide/latest/4-Web_Application_Security_Testing/04-Authentication_Testing/04-Testing_for_Bypassing_Authentication_Schema
+    steps: []
+    tested: false
+    title: Testing for Bypassing Authentication Schema
+  - description: Validate that the generated session is managed securely and do not
+      put the user's credentials in danger.
+    id: WSTG-ATHN-05
+    isvulnerable: false
+    observations: ''
+    reference: https://owasp.org/www-project-web-security-testing-guide/latest/4-Web_Application_Security_Testing/04-Authentication_Testing/05-Testing_for_Vulnerable_Remember_Password
+    steps: []
+    tested: false
+    title: Testing for Vulnerable Remember Password
+  - description: Review if the application stores sensitive information on the client-side.
+    id: WSTG-ATHN-06
+    isvulnerable: false
+    observations: ''
+    reference: https://owasp.org/www-project-web-security-testing-guide/latest/4-Web_Application_Security_Testing/04-Authentication_Testing/06-Testing_for_Browser_Cache_Weaknesses
+    steps: []
+    tested: false
+    title: Testing for Browser Cache Weaknesses
+  - description: Determine the resistance of the application against brute force password
+      guessing using available password dictionaries by evaluating the length, complexity,
+      reuse, and aging requirements of passwords.
+    id: WSTG-ATHN-07
+    isvulnerable: false
+    observations: ''
+    reference: https://owasp.org/www-project-web-security-testing-guide/latest/4-Web_Application_Security_Testing/04-Authentication_Testing/07-Testing_for_Weak_Password_Policy
+    steps: []
+    tested: false
+    title: Testing for Weak Password Policy
+  - description: Determine the complexity and how straight-forward the questions are.
+    id: WSTG-ATHN-08
+    isvulnerable: false
+    observations: ''
+    reference: https://owasp.org/www-project-web-security-testing-guide/latest/4-Web_Application_Security_Testing/04-Authentication_Testing/08-Testing_for_Weak_Security_Question_Answer
+    steps: []
+    tested: false
+    title: Testing for Weak Security Question Answer
+  - description: Determine whether the password change and reset functionality allows
+      accounts to be compromised.
+    id: WSTG-ATHN-09
+    isvulnerable: false
+    observations: ''
+    reference: https://owasp.org/www-project-web-security-testing-guide/latest/4-Web_Application_Security_Testing/04-Authentication_Testing/09-Testing_for_Weak_Password_Change_or_Reset_Functionalities
+    steps: []
+    tested: false
+    title: Testing for Weak Password Change or Reset Functionalities
+  - description: Identify alternative authentication channels.
+    id: WSTG-ATHN-10
+    isvulnerable: false
+    observations: ''
+    reference: https://owasp.org/www-project-web-security-testing-guide/latest/4-Web_Application_Security_Testing/04-Authentication_Testing/10-Testing_for_Weaker_Authentication_in_Alternative_Channel
+    steps: []
+    tested: false
+    title: Testing for Weaker Authentication in Alternative Channel
+  - description: Identify the type of MFA used by the application.
+    id: WSTG-ATHN-11
+    isvulnerable: false
+    observations: ''
+    reference: https://owasp.org/www-project-web-security-testing-guide/latest/4-Web_Application_Security_Testing/04-Authentication_Testing/11-Testing_Multi-Factor_Authentication
+    steps: []
+    tested: false
+    title: Testing Multi-Factor Authentication (MFA)
+  id: WSTG-ATHN
+  title: Authentication Testing
+- children:
+  - description: Identify injection points that pertain to path traversal.
+    id: WSTG-ATHZ-01
+    isvulnerable: false
+    observations: ''
+    reference: https://owasp.org/www-project-web-security-testing-guide/latest/4-Web_Application_Security_Testing/05-Authorization_Testing/01-Testing_Directory_Traversal_File_Include
+    steps: []
+    tested: false
+    title: Testing Directory Traversal File Include
+  - description: Assess if horizontal or vertical access is possible.
+    id: WSTG-ATHZ-02
+    isvulnerable: false
+    observations: ''
+    reference: https://owasp.org/www-project-web-security-testing-guide/latest/4-Web_Application_Security_Testing/05-Authorization_Testing/02-Testing_for_Bypassing_Authorization_Schema
+    steps: []
+    tested: false
+    title: Testing for Bypassing Authorization Schema
+  - description: Identify injection points related to privilege manipulation.
+    id: WSTG-ATHZ-03
+    isvulnerable: false
+    observations: ''
+    reference: https://owasp.org/www-project-web-security-testing-guide/latest/4-Web_Application_Security_Testing/05-Authorization_Testing/03-Testing_for_Privilege_Escalation
+    steps: []
+    tested: false
+    title: Testing for Privilege Escalation
+  - description: Identify points where object references may occur.
+    id: WSTG-ATHZ-04
+    isvulnerable: false
+    observations: ''
+    reference: https://owasp.org/www-project-web-security-testing-guide/latest/4-Web_Application_Security_Testing/05-Authorization_Testing/04-Testing_for_Insecure_Direct_Object_References
+    steps: []
+    tested: false
+    title: Testing for Insecure Direct Object References
+  - description: Determine if OAuth2 implementation is vulnerable or using a deprecated
+      or custom implementation.
+    id: WSTG-ATHZ-05
+    isvulnerable: false
+    observations: ''
+    reference: https://owasp.org/www-project-web-security-testing-guide/latest/4-Web_Application_Security_Testing/05-Authorization_Testing/05-Testing_for_OAuth_Weaknesses
+    steps: []
+    tested: false
+    title: Testing for OAuth Weaknesses
+  id: WSTG-ATHZ
+  title: Authorization Testing
+- children:
+  - description: Gather session tokens, for the same user and for different users
+      where possible.
+    id: WSTG-SESS-01
+    isvulnerable: false
+    observations: ''
+    reference: https://owasp.org/www-project-web-security-testing-guide/latest/4-Web_Application_Security_Testing/06-Session_Management_Testing/01-Testing_for_Session_Management_Schema
+    steps: []
+    tested: false
+    title: Testing for Session Management Schema
+  - description: Ensure that the proper security configuration is set for cookies.
+    id: WSTG-SESS-02
+    isvulnerable: false
+    observations: ''
+    reference: https://owasp.org/www-project-web-security-testing-guide/latest/4-Web_Application_Security_Testing/06-Session_Management_Testing/02-Testing_for_Cookies_Attributes
+    steps: []
+    tested: false
+    title: Testing for Cookies Attributes
+  - description: Analyze the authentication mechanism and its flow.
+    id: WSTG-SESS-03
+    isvulnerable: false
+    observations: ''
+    reference: https://owasp.org/www-project-web-security-testing-guide/latest/4-Web_Application_Security_Testing/06-Session_Management_Testing/03-Testing_for_Session_Fixation
+    steps: []
+    tested: false
+    title: Testing for Session Fixation
+  - description: Ensure that proper encryption is implemented.
+    id: WSTG-SESS-04
+    isvulnerable: false
+    observations: ''
+    reference: https://owasp.org/www-project-web-security-testing-guide/latest/4-Web_Application_Security_Testing/06-Session_Management_Testing/04-Testing_for_Exposed_Session_Variables
+    steps: []
+    tested: false
+    title: Testing for Exposed Session Variables
+  - description: Determine whether it is possible to initiate requests on a user's
+      behalf that are not initiated by the user.
+    id: WSTG-SESS-05
+    isvulnerable: false
+    observations: ''
+    reference: https://owasp.org/www-project-web-security-testing-guide/latest/4-Web_Application_Security_Testing/06-Session_Management_Testing/05-Testing_for_Cross_Site_Request_Forgery
+    steps: []
+    tested: false
+    title: Testing for Cross Site Request Forgery
+  - description: Assess the logout UI.
+    id: WSTG-SESS-06
+    isvulnerable: false
+    observations: ''
+    reference: https://owasp.org/www-project-web-security-testing-guide/latest/4-Web_Application_Security_Testing/06-Session_Management_Testing/06-Testing_for_Logout_Functionality
+    steps: []
+    tested: false
+    title: Testing for Logout Functionality
+  - description: Validate that a hard session timeout exists.
+    id: WSTG-SESS-07
+    isvulnerable: false
+    observations: ''
+    reference: https://owasp.org/www-project-web-security-testing-guide/latest/4-Web_Application_Security_Testing/06-Session_Management_Testing/07-Testing_Session_Timeout
+    steps: []
+    tested: false
+    title: Testing Session Timeout
+  - description: Identify all session variables.
+    id: WSTG-SESS-08
+    isvulnerable: false
+    observations: ''
+    reference: https://owasp.org/www-project-web-security-testing-guide/latest/4-Web_Application_Security_Testing/06-Session_Management_Testing/08-Testing_for_Session_Puzzling
+    steps: []
+    tested: false
+    title: Testing for Session Puzzling
+  - description: Identify vulnerable session cookies.
+    id: WSTG-SESS-09
+    isvulnerable: false
+    observations: ''
+    reference: https://owasp.org/www-project-web-security-testing-guide/latest/4-Web_Application_Security_Testing/06-Session_Management_Testing/09-Testing_for_Session_Hijacking
+    steps: []
+    tested: false
+    title: Testing for Session Hijacking
+  - description: Determine whether the JWTs expose sensitive information.
+    id: WSTG-SESS-10
+    isvulnerable: false
+    observations: ''
+    reference: https://owasp.org/www-project-web-security-testing-guide/latest/4-Web_Application_Security_Testing/06-Session_Management_Testing/10-Testing_JSON_Web_Tokens
+    steps: []
+    tested: false
+    title: Testing JSON Web Tokens
+  id: WSTG-SESS
+  title: Session Management Testing
+- children:
+  - description: Identify variables that are reflected in responses.
+    id: WSTG-INPV-01
+    isvulnerable: false
+    observations: ''
+    reference: https://owasp.org/www-project-web-security-testing-guide/latest/4-Web_Application_Security_Testing/07-Input_Validation_Testing/01-Testing_for_Reflected_Cross_Site_Scripting
+    steps: []
+    tested: false
+    title: Testing for Reflected Cross Site Scripting
+  - description: Identify stored input that is reflected on the client-side.
+    id: WSTG-INPV-02
+    isvulnerable: false
+    observations: ''
+    reference: https://owasp.org/www-project-web-security-testing-guide/latest/4-Web_Application_Security_Testing/07-Input_Validation_Testing/02-Testing_for_Stored_Cross_Site_Scripting
+    steps: []
+    tested: false
+    title: Testing for Stored Cross Site Scripting
+  - description: ''
+    id: WSTG-INPV-03
+    isvulnerable: false
+    observations: ''
+    reference: https://owasp.org/www-project-web-security-testing-guide/latest/4-Web_Application_Security_Testing/07-Input_Validation_Testing/03-Testing_for_HTTP_Verb_Tampering
+    steps: []
+    tested: false
+    title: Testing for HTTP Verb Tampering
+  - description: Identify the backend and the parsing method used.
+    id: WSTG-INPV-04
+    isvulnerable: false
+    observations: ''
+    reference: https://owasp.org/www-project-web-security-testing-guide/latest/4-Web_Application_Security_Testing/07-Input_Validation_Testing/04-Testing_for_HTTP_Parameter_Pollution
+    steps: []
+    tested: false
+    title: Testing for HTTP Parameter Pollution
+  - description: Identify SQL injection points.
+    id: WSTG-INPV-05
+    isvulnerable: false
+    observations: ''
+    reference: https://owasp.org/www-project-web-security-testing-guide/latest/4-Web_Application_Security_Testing/07-Input_Validation_Testing/05-Testing_for_SQL_Injection
+    steps: []
+    tested: false
+    title: Testing for SQL Injection
+  - description: Identify LDAP injection points.
+    id: WSTG-INPV-06
+    isvulnerable: false
+    observations: ''
+    reference: https://owasp.org/www-project-web-security-testing-guide/latest/4-Web_Application_Security_Testing/07-Input_Validation_Testing/06-Testing_for_LDAP_Injection
+    steps: []
+    tested: false
+    title: Testing for LDAP Injection
+  - description: Identify XML injection points.
+    id: WSTG-INPV-07
+    isvulnerable: false
+    observations: ''
+    reference: https://owasp.org/www-project-web-security-testing-guide/latest/4-Web_Application_Security_Testing/07-Input_Validation_Testing/07-Testing_for_XML_Injection
+    steps: []
+    tested: false
+    title: Testing for XML Injection
+  - description: Identify SSI injection points.
+    id: WSTG-INPV-08
+    isvulnerable: false
+    observations: ''
+    reference: https://owasp.org/www-project-web-security-testing-guide/latest/4-Web_Application_Security_Testing/07-Input_Validation_Testing/08-Testing_for_SSI_Injection
+    steps: []
+    tested: false
+    title: Testing for SSI Injection
+  - description: Identify XPATH injection points.
+    id: WSTG-INPV-09
+    isvulnerable: false
+    observations: ''
+    reference: https://owasp.org/www-project-web-security-testing-guide/latest/4-Web_Application_Security_Testing/07-Input_Validation_Testing/09-Testing_for_XPath_Injection
+    steps: []
+    tested: false
+    title: Testing for XPath Injection
+  - description: Identify IMAP/SMTP injection points.
+    id: WSTG-INPV-10
+    isvulnerable: false
+    observations: ''
+    reference: https://owasp.org/www-project-web-security-testing-guide/latest/4-Web_Application_Security_Testing/07-Input_Validation_Testing/10-Testing_for_IMAP_SMTP_Injection
+    steps: []
+    tested: false
+    title: Testing for IMAP SMTP Injection
+  - description: Identify injection points where you can inject code into the application.
+    id: WSTG-INPV-11
+    isvulnerable: false
+    observations: ''
+    reference: https://owasp.org/www-project-web-security-testing-guide/latest/4-Web_Application_Security_Testing/07-Input_Validation_Testing/11-Testing_for_Code_Injection
+    steps: []
+    tested: false
+    title: Testing for Code Injection
+  - description: Identify and assess the command injection points.
+    id: WSTG-INPV-12
+    isvulnerable: false
+    observations: ''
+    reference: https://owasp.org/www-project-web-security-testing-guide/latest/4-Web_Application_Security_Testing/07-Input_Validation_Testing/12-Testing_for_Command_Injection
+    steps: []
+    tested: false
+    title: Testing for Command Injection
+  - description: ''
+    id: WSTG-INPV-13
+    isvulnerable: false
+    observations: ''
+    reference: https://owasp.org/www-project-web-security-testing-guide/latest/4-Web_Application_Security_Testing/07-Input_Validation_Testing/13-Testing_for_Buffer_Overflow
+    steps: []
+    tested: false
+    title: Testing for Buffer Overflow
+  - description: Assess whether injecting format string conversion specifiers into
+      user-controlled fields causes undesired behavior from the application.
+    id: WSTG-INPV-13
+    isvulnerable: false
+    observations: ''
+    reference: https://owasp.org/www-project-web-security-testing-guide/latest/4-Web_Application_Security_Testing/07-Input_Validation_Testing/13-Testing_for_Format_String_Injection
+    steps: []
+    tested: false
+    title: Testing for Format String Injection
+  - description: Identify injections that are stored and require a recall step to
+      the stored injection.
+    id: WSTG-INPV-14
+    isvulnerable: false
+    observations: ''
+    reference: https://owasp.org/www-project-web-security-testing-guide/latest/4-Web_Application_Security_Testing/07-Input_Validation_Testing/14-Testing_for_Incubated_Vulnerability
+    steps: []
+    tested: false
+    title: Testing for Incubated Vulnerability
+  - description: Assess if the application is vulnerable to splitting, identifying
+      what possible attacks are achievable.
+    id: WSTG-INPV-15
+    isvulnerable: false
+    observations: ''
+    reference: https://owasp.org/www-project-web-security-testing-guide/latest/4-Web_Application_Security_Testing/07-Input_Validation_Testing/15-Testing_for_HTTP_Splitting_Smuggling
+    steps: []
+    tested: false
+    title: Testing for HTTP Splitting Smuggling
+  - description: Monitor all incoming and outgoing HTTP requests to the Web Server
+      to inspect any suspicious requests.
+    id: WSTG-INPV-16
+    isvulnerable: false
+    observations: ''
+    reference: https://owasp.org/www-project-web-security-testing-guide/latest/4-Web_Application_Security_Testing/07-Input_Validation_Testing/16-Testing_for_HTTP_Incoming_Requests
+    steps: []
+    tested: false
+    title: Testing for HTTP Incoming Requests
+  - description: Assess if the Host header is being parsed dynamically in the application.
+    id: WSTG-INPV-17
+    isvulnerable: false
+    observations: ''
+    reference: https://owasp.org/www-project-web-security-testing-guide/latest/4-Web_Application_Security_Testing/07-Input_Validation_Testing/17-Testing_for_Host_Header_Injection
+    steps: []
+    tested: false
+    title: Testing for Host Header Injection
+  - description: Detect template injection vulnerability points.
+    id: WSTG-INPV-18
+    isvulnerable: false
+    observations: ''
+    reference: https://owasp.org/www-project-web-security-testing-guide/latest/4-Web_Application_Security_Testing/07-Input_Validation_Testing/18-Testing_for_Server-side_Template_Injection
+    steps: []
+    tested: false
+    title: Testing for Server-side Template Injection
+  - description: Identify SSRF injection points.
+    id: WSTG-INPV-19
+    isvulnerable: false
+    observations: ''
+    reference: https://owasp.org/www-project-web-security-testing-guide/latest/4-Web_Application_Security_Testing/07-Input_Validation_Testing/19-Testing_for_Server-Side_Request_Forgery
+    steps: []
+    tested: false
+    title: Testing for Server-Side Request Forgery
+  - description: Identify requests that modify objects
+    id: WSTG-INPV-20
+    isvulnerable: false
+    observations: ''
+    reference: https://owasp.org/www-project-web-security-testing-guide/latest/4-Web_Application_Security_Testing/07-Input_Validation_Testing/20-Testing_for_Mass_Assignment
+    steps: []
+    tested: false
+    title: Testing for Mass Assignment
+  id: WSTG-INPV
+  title: Input Validation Testing
+- children:
+  - description: Identify existing error output.
+    id: WSTG-ERRH-01
+    isvulnerable: false
+    observations: ''
+    reference: https://owasp.org/www-project-web-security-testing-guide/latest/4-Web_Application_Security_Testing/08-Testing_for_Error_Handling/01-Testing_For_Improper_Error_Handling
+    steps: []
+    tested: false
+    title: Testing for Improper Error Handling
+  - description: ''
+    id: WSTG-ERRH-02
+    isvulnerable: false
+    observations: ''
+    reference: https://owasp.org/www-project-web-security-testing-guide/latest/4-Web_Application_Security_Testing/08-Testing_for_Error_Handling/02-Testing_for_Stack_Traces
+    steps: []
+    tested: false
+    title: Testing for Stack Traces
+  id: WSTG-ERRH
+  title: Testing for Error Handling
+- children:
+  - description: Validate the service configuration.
+    id: WSTG-CRYP-01
+    isvulnerable: false
+    observations: ''
+    reference: https://owasp.org/www-project-web-security-testing-guide/latest/4-Web_Application_Security_Testing/09-Testing_for_Weak_Cryptography/01-Testing_for_Weak_Transport_Layer_Security
+    steps: []
+    tested: false
+    title: Testing for Weak Transport Layer Security
+  - description: Identify encrypted messages that rely on padding.
+    id: WSTG-CRYP-02
+    isvulnerable: false
+    observations: ''
+    reference: https://owasp.org/www-project-web-security-testing-guide/latest/4-Web_Application_Security_Testing/09-Testing_for_Weak_Cryptography/02-Testing_for_Padding_Oracle
+    steps: []
+    tested: false
+    title: Testing for Padding Oracle
+  - description: Identify sensitive information transmitted through the various channels.
+    id: WSTG-CRYP-03
+    isvulnerable: false
+    observations: ''
+    reference: https://owasp.org/www-project-web-security-testing-guide/latest/4-Web_Application_Security_Testing/09-Testing_for_Weak_Cryptography/03-Testing_for_Sensitive_Information_Sent_via_Unencrypted_Channels
+    steps: []
+    tested: false
+    title: Testing for Sensitive Information Sent via Unencrypted Channels
+  - description: Provide a guideline for the identification weak encryption or hashing
+      uses and implementations.
+    id: WSTG-CRYP-04
+    isvulnerable: false
+    observations: ''
+    reference: https://owasp.org/www-project-web-security-testing-guide/latest/4-Web_Application_Security_Testing/09-Testing_for_Weak_Cryptography/04-Testing_for_Weak_Encryption
+    steps: []
+    tested: false
+    title: Testing for Weak Encryption
+  id: WSTG-CRYP
+  title: Testing for Weak Cryptography
+- children:
+  - description: Identify data injection points.
+    id: WSTG-BUSL-01
+    isvulnerable: false
+    observations: ''
+    reference: https://owasp.org/www-project-web-security-testing-guide/latest/4-Web_Application_Security_Testing/10-Business_Logic_Testing/01-Test_Business_Logic_Data_Validation
+    steps: []
+    tested: false
+    title: Test Business Logic Data Validation
+  - description: Review the project documentation looking for guessable, predictable,
+      or hidden functionality of fields.
+    id: WSTG-BUSL-02
+    isvulnerable: false
+    observations: ''
+    reference: https://owasp.org/www-project-web-security-testing-guide/latest/4-Web_Application_Security_Testing/10-Business_Logic_Testing/02-Test_Ability_to_Forge_Requests
+    steps: []
+    tested: false
+    title: Test Ability to Forge Requests
+  - description: Review the project documentation for components of the system that
+      move, store, or handle data.
+    id: WSTG-BUSL-03
+    isvulnerable: false
+    observations: ''
+    reference: https://owasp.org/www-project-web-security-testing-guide/latest/4-Web_Application_Security_Testing/10-Business_Logic_Testing/03-Test_Integrity_Checks
+    steps: []
+    tested: false
+    title: Test Integrity Checks
+  - description: Review the project documentation for system functionality that may
+      be impacted by time.
+    id: WSTG-BUSL-04
+    isvulnerable: false
+    observations: ''
+    reference: https://owasp.org/www-project-web-security-testing-guide/latest/4-Web_Application_Security_Testing/10-Business_Logic_Testing/04-Test_for_Process_Timing
+    steps: []
+    tested: false
+    title: Test for Process Timing
+  - description: Identify functions that must set limits to the times they can be
+      called.
+    id: WSTG-BUSL-05
+    isvulnerable: false
+    observations: ''
+    reference: https://owasp.org/www-project-web-security-testing-guide/latest/4-Web_Application_Security_Testing/10-Business_Logic_Testing/05-Test_Number_of_Times_a_Function_Can_Be_Used_Limits
+    steps: []
+    tested: false
+    title: Test Number of Times a Function Can Be Used Limits
+  - description: Review the project documentation for methods to skip or go through
+      steps in the application process in a different order from the intended business
+      logic flow.
+    id: WSTG-BUSL-06
+    isvulnerable: false
+    observations: ''
+    reference: https://owasp.org/www-project-web-security-testing-guide/latest/4-Web_Application_Security_Testing/10-Business_Logic_Testing/06-Testing_for_the_Circumvention_of_Work_Flows
+    steps: []
+    tested: false
+    title: Testing for the Circumvention of Work Flows
+  - description: Generate notes from all tests conducted against the system.
+    id: WSTG-BUSL-07
+    isvulnerable: false
+    observations: ''
+    reference: https://owasp.org/www-project-web-security-testing-guide/latest/4-Web_Application_Security_Testing/10-Business_Logic_Testing/07-Test_Defenses_Against_Application_Misuse
+    steps: []
+    tested: false
+    title: Test Defenses Against Application Misuse
+  - description: Review the project documentation for file types that are rejected
+      by the system.
+    id: WSTG-BUSL-08
+    isvulnerable: false
+    observations: ''
+    reference: https://owasp.org/www-project-web-security-testing-guide/latest/4-Web_Application_Security_Testing/10-Business_Logic_Testing/08-Test_Upload_of_Unexpected_File_Types
+    steps: []
+    tested: false
+    title: Test Upload of Unexpected File Types
+  - description: Identify the file upload functionality.
+    id: WSTG-BUSL-09
+    isvulnerable: false
+    observations: ''
+    reference: https://owasp.org/www-project-web-security-testing-guide/latest/4-Web_Application_Security_Testing/10-Business_Logic_Testing/09-Test_Upload_of_Malicious_Files
+    steps: []
+    tested: false
+    title: Test Upload of Malicious Files
+  - description: Determine whether the business logic for the e-commerce functionality
+      is robust.
+    id: WSTG-BUSL-10
+    isvulnerable: false
+    observations: ''
+    reference: https://owasp.org/www-project-web-security-testing-guide/latest/4-Web_Application_Security_Testing/10-Business_Logic_Testing/10-Test-Payment-Functionality
+    steps: []
+    tested: false
+    title: Test Payment Functionality
+  id: WSTG-BUSL
+  title: Business Logic Testing
+- children:
+  - description: Identify DOM sinks.
+    id: WSTG-CLNT-01
+    isvulnerable: false
+    observations: ''
+    reference: https://owasp.org/www-project-web-security-testing-guide/latest/4-Web_Application_Security_Testing/11-Client-side_Testing/01-Testing_for_DOM-based_Cross_Site_Scripting
+    steps: []
+    tested: false
+    title: Testing for DOM-Based Cross Site Scripting
+  - description: Identify sinks and possible JavaScript injection points.
+    id: WSTG-CLNT-02
+    isvulnerable: false
+    observations: ''
+    reference: https://owasp.org/www-project-web-security-testing-guide/latest/4-Web_Application_Security_Testing/11-Client-side_Testing/02-Testing_for_JavaScript_Execution
+    steps: []
+    tested: false
+    title: Testing for JavaScript Execution
+  - description: Identify HTML injection points and assess the severity of the injected
+      content.
+    id: WSTG-CLNT-03
+    isvulnerable: false
+    observations: ''
+    reference: https://owasp.org/www-project-web-security-testing-guide/latest/4-Web_Application_Security_Testing/11-Client-side_Testing/03-Testing_for_HTML_Injection
+    steps: []
+    tested: false
+    title: Testing for HTML Injection
+  - description: Identify injection points that handle URLs or paths.
+    id: WSTG-CLNT-04
+    isvulnerable: false
+    observations: ''
+    reference: https://owasp.org/www-project-web-security-testing-guide/latest/4-Web_Application_Security_Testing/11-Client-side_Testing/04-Testing_for_Client-side_URL_Redirect
+    steps: []
+    tested: false
+    title: Testing for Client-side URL Redirect
+  - description: Identify CSS injection points.
+    id: WSTG-CLNT-05
+    isvulnerable: false
+    observations: ''
+    reference: https://owasp.org/www-project-web-security-testing-guide/latest/4-Web_Application_Security_Testing/11-Client-side_Testing/05-Testing_for_CSS_Injection
+    steps: []
+    tested: false
+    title: Testing for CSS Injection
+  - description: Identify sinks with weak input validation.
+    id: WSTG-CLNT-06
+    isvulnerable: false
+    observations: ''
+    reference: https://owasp.org/www-project-web-security-testing-guide/latest/4-Web_Application_Security_Testing/11-Client-side_Testing/06-Testing_for_Client-side_Resource_Manipulation
+    steps: []
+    tested: false
+    title: Testing for Client-side Resource Manipulation
+  - description: Identify endpoints that implement CORS.
+    id: WSTG-CLNT-07
+    isvulnerable: false
+    observations: ''
+    reference: https://owasp.org/www-project-web-security-testing-guide/latest/4-Web_Application_Security_Testing/11-Client-side_Testing/07-Testing_Cross_Origin_Resource_Sharing
+    steps: []
+    tested: false
+    title: Testing Cross Origin Resource Sharing
+  - description: Decompile and analyze the application's code.
+    id: WSTG-CLNT-08
+    isvulnerable: false
+    observations: ''
+    reference: https://owasp.org/www-project-web-security-testing-guide/latest/4-Web_Application_Security_Testing/11-Client-side_Testing/08-Testing_for_Cross_Site_Flashing
+    steps: []
+    tested: false
+    title: Testing for Cross Site Flashing
+  - description: Understand security measures in place.
+    id: WSTG-CLNT-09
+    isvulnerable: false
+    observations: ''
+    reference: https://owasp.org/www-project-web-security-testing-guide/latest/4-Web_Application_Security_Testing/11-Client-side_Testing/09-Testing_for_Clickjacking
+    steps: []
+    tested: false
+    title: Testing for Clickjacking
+  - description: Identify the usage of WebSockets.
+    id: WSTG-CLNT-10
+    isvulnerable: false
+    observations: ''
+    reference: https://owasp.org/www-project-web-security-testing-guide/latest/4-Web_Application_Security_Testing/11-Client-side_Testing/10-Testing_WebSockets
+    steps: []
+    tested: false
+    title: Testing WebSockets
+  - description: Assess the security of the message's origin.
+    id: WSTG-CLNT-11
+    isvulnerable: false
+    observations: ''
+    reference: https://owasp.org/www-project-web-security-testing-guide/latest/4-Web_Application_Security_Testing/11-Client-side_Testing/11-Testing_Web_Messaging
+    steps: []
+    tested: false
+    title: Testing Web Messaging
+  - description: Determine whether the website is storing sensitive data in client-side
+      storage.
+    id: WSTG-CLNT-12
+    isvulnerable: false
+    observations: ''
+    reference: https://owasp.org/www-project-web-security-testing-guide/latest/4-Web_Application_Security_Testing/11-Client-side_Testing/12-Testing_Browser_Storage
+    steps: []
+    tested: false
+    title: Testing Browser Storage
+  - description: Locate sensitive data across the system.
+    id: WSTG-CLNT-13
+    isvulnerable: false
+    observations: ''
+    reference: https://owasp.org/www-project-web-security-testing-guide/latest/4-Web_Application_Security_Testing/11-Client-side_Testing/13-Testing_for_Cross_Site_Script_Inclusion
+    steps: []
+    tested: false
+    title: Testing for Cross Site Script Inclusion
+  - description: ''
+    id: WSTG-CLNT-14
+    isvulnerable: false
+    observations: ''
+    reference: https://owasp.org/www-project-web-security-testing-guide/latest/4-Web_Application_Security_Testing/11-Client-side_Testing/14-Testing_for_Reverse_Tabnabbing
+    steps: []
+    tested: false
+    title: Testing for Reverse Tabnabbing
+  id: WSTG-CLNT
+  title: Client-side Testing
+- children:
+  - description: Assess that a secure and production-ready configuration is deployed.
+    id: WSTG-APIT-01
+    isvulnerable: false
+    observations: ''
+    reference: https://owasp.org/www-project-web-security-testing-guide/latest/4-Web_Application_Security_Testing/12-API_Testing/01-Testing_GraphQL
+    steps: []
+    tested: false
+    title: Testing GraphQL
+  id: WSTG-APIT
+  title: API Testing
+
