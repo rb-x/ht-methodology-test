@@ -1,0 +1,13 @@
+- category:
+    atomic_tests:
+    - description: Conduct Search Engine Discovery Reconnaissance for Information
+        Leakage
+      id: foo
+      objectives:
+      - bar
+      observations: Your observation
+      reference: http://google.fr
+      substeps:
+      - note 1
+      wasTested: false
+      wasVulnerable: false
