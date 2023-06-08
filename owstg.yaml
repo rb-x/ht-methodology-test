@@ -1,5 +1,5 @@
+- type: pentest
 - category:
-    type: pentest
     atomic_tests:
     - description: Conduct Search Engine Discovery Reconnaissance for Information
         Leakage
